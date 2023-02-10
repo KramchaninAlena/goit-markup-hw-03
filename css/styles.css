@@ -6,6 +6,7 @@
     --white-color:#FFFFFF;
     --light-color:#F4F4FD;
     --filters-color:#404BBF;
+    --br-color:#E7E9FC;
 }
 
 /* heder */
@@ -17,6 +18,18 @@
     background-color:var(--white-color);
     color:var(--primary-text-color);
 }
+
+.heder{
+    border-bottom: 1px solid var(--br-color);
+    
+}
+
+.container{
+    width: 1158px;margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid green;
+}
+
 
 .logo{
     color: var(--accent-color);
@@ -35,11 +48,18 @@
 .list{
     list-style: none;
     text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-nav{
+    display: flex;
 }
 
 .site-nav .link{
     font-weight: 500;
     color:var(--secondary-text-color);
+           
 }
 
 .site-nav .link:hover, .site-nav .link:focus{
@@ -61,16 +81,23 @@
 /* hero */
 .hero{
     background-color: var(--secondary-text-color);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title{
+    max-width: 494px;
     font-size: 56px;
     line-height: 1.07;
     color:var(--white-color);
+    
+    margin: 0 auto 48px;
+    
+    
 }
 
 .hero-button{
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -79,6 +106,9 @@
     background-color: var(--accent-color);
     border-radius: 4px;
     cursor: pointer; 
+
+    padding: 16px 32px;
+    border: 1px solid transparent;
 }
 
 .hero-button:hover, .hero-button:focus{
@@ -86,42 +116,93 @@
 }
 
 /* skills */
+.skills{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
 .section-sub-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     color: var(--secondary-text-color);
+
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.title-hidden{
+    margin: 0;
+}
+
+.skills-text{
+    margin: 0;
 }
 
 /* section title */
+.section-work{
+    padding-bottom: 120px;
+}
+
 .section-title{
     font-size: 36px;
     line-height: 1.1;
     text-transform: capitalize;
+    text-align: center;
     color: var(--secondary-text-color);
+    
+    margin-top: 0;
+    margin-bottom: 72px;
+}
+
+.block-list{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* team */
 .team{
     background-color:var(--light-color);
+
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
+.card{
+    background-color: var(--white-color);
+    width: 264px;
+    padding: 32px 16px 32px 16px;
+    margin: 0;
+    text-align: center;
+}
+
+.team-text{
+    margin: 0;
+}
 
 /* footer */
 .logo {
     color: var(--accent-color);
+    
 }
 
 .footer .logo-web {
     color:var(--light-color);
+    
 }
 
 .footer{
     background-color:var(--secondary-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text{
     color: #E7E9FC;
+    margin-top: 16px;
+    margin-bottom: 0;
+    max-width: 264px;
 }
 
 /* portfolio */
@@ -136,6 +217,8 @@
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     cursor: pointer;
+
+    padding: 12px 24px;
 }
 
 .button-filters:hover{
@@ -143,3 +226,16 @@
     background-color:var(--filters-color);
 }
 
+.portfolio-card{
+    /* padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px; */
+    padding: 32px 0 32px 16px;
+    width: 360px;
+    border: 1px solid var(--br-color);
+}
+
+.portfolio-text{
+    margin: 0;
+    
+}
