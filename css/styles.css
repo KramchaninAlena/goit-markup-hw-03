@@ -188,7 +188,7 @@ padding-bottom: 120px;
     margin: 0;
 }
 .skills-item{
-    flex-basis: calc((100%-72px)/4);
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 /* work */
@@ -213,7 +213,7 @@ padding-bottom: 120px;
 }
 
 .work-item{
-    flex-basis: calc((100%-48px)/3);
+    flex-basis: calc((100% - 48px) / 3);
 }
 
 
@@ -233,6 +233,7 @@ padding-bottom: 120px;
 
 .team-item{
     flex-basis: calc((100%-72px)/4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card{
@@ -273,7 +274,7 @@ padding-bottom: 120px;
 
 /* portfolio */
 .portfolio{
-    padding-top: 72px;
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 
